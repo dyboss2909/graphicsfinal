@@ -1,1 +1,1 @@
-//hello
+var hello=4;
