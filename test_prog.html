@@ -1,60 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>3D Scene with Cube and Rings</title>
-</head>
-<body onload="main()">
-    <canvas id="webgl" width="600" height="500">
-        Please use a browser that supports "canvas"
-    </canvas>
-    <button>
-        Hello
-    </button>
-    <button>
-        hello2
-    </button>
-    <button>
-        hello3
-    </button>
-    <button>
-        hello4
-    </button>
-    <button>
-        hello5
-    </button>
-    <div class="controls">
-        <div>
-            <button id="lookUp">Up</button>
-        </div>
-        <div>
-            <button id="lookLeft">Left</button>
-            <button id="lookReset">Reset</button>
-            <button id="lookRight">Right</button>
-        </div>
-        <div>
-            <button id="lookDown">Down</button>
-            
-        </div>
-        <div>
-            <button id="zoomOut">Zoom In</button>
-            <button id="zoomIn">Zoom Out</button>
-            <button id="eyeUp">Eye Up</button>
-            <button id="eyeDown">Eye Down</button>
-        </div>
-        <div style="margin-top: 10px;">
-            Light Intensity: <input type="range" id="lightIntensity" min="50" max="200" value="50" step="1">
-            </div>
-        <div>
-            <button id="toggleProjection">Toggle Projection</button>
-            <button id="orthoScaleUp">Increase Ortho Scale</button>
-            <button id="orthoScaleDown">Decrease Ortho Scale</button>
-        </div>
+    <title>Quadrant Cubes</title>
+  </head>
 
-    <script src="lib/webgl-utils.js"></script>
-    <script src="lib/webgl-debug.js"></script>
-    <script src="lib/cuon-utils.js"></script>
-    <script src="lib/cuon-matrix.js"></script>
-    <script src="test_prog.js"></script>
-</body>
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="800">
+      Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="QuadrantCubes.js"></script>
+  </body>
 </html>
